@@ -91,3 +91,107 @@ KNN operates under the assumption that samples close to each other are likely to
 This simplicity and intuitive approach make KNN a versatile and widely used algorithm in various applications.
 
 
+### Random Forest  
+
+The **Random Forest** algorithm is a powerful machine learning tool that combines multiple decision trees to create a "forest" of trees. Each tree independently makes decisions based on different subsets of the data, and their predictions are aggregated to produce a final output. Random Forest uses **bootstrap sampling** to randomly sample data points with replacement during the training process. This technique reduces overfitting and improves model stability.  
+
+* How Random Forest Works  
+
+1. **Bootstrap Sampling**: A random subset of the data is used to train each decision tree.  
+2. **Feature Subset Selection**: At each split in the tree, a random subset of features is considered to determine the best split.  
+3. **Voting Mechanism**:  
+   - For **classification**: Each tree votes for a class, and the class with the majority votes is chosen.  
+   - For **regression**: The average prediction of all trees is used as the final output.  
+
+** Key Advantages  
+
+- **Versatility**: Applicable to both classification and regression problems.  
+- **Reduced Overfitting**: By aggregating multiple trees, Random Forest minimizes the risk of overfitting compared to a single decision tree.  
+- **Ease of Implementation**: It is straightforward to use and works well with large datasets.  
+
+---
+
+### Logistic Regression  
+
+**Logistic Regression** is a machine learning algorithm primarily used for binary classification problems. It predicts whether a sample belongs to one of two categories, such as "Yes" or "No," "Spam" or "Not Spam."  
+
+* How Logistic Regression Works  
+
+Logistic Regression models the probability of a sample belonging to a specific class using a **Sigmoid Function**, which maps predictions to a probability range between 0 and 1. The goal is to predict the likelihood that a given input belongs to the positive class (e.g., class 1).  
+
+** Sigmoid Function  
+
+The Sigmoid Function is defined as:  
+\[S(t) = \frac{1}{1 + e^{-t}}\]  
+Here, (t)  is a linear combination of the input features.  
+
+*** Applications  :
+
+- **Spam detection**  
+- **Customer churn prediction**  
+- **Medical diagnosis** (e.g., predicting if a patient has a disease or not).  
+
+Both **Random Forest** and **Logistic Regression** are widely used due to their effectiveness and flexibility across various domains.
+
+
+### Decision Tree  
+
+A **Decision Tree** is a popular machine learning algorithm used for both regression and classification problems. It structures data into a tree format, where each **node** represents a decision based on a feature, and each **leaf** represents a classification or regression outcome.  
+
+* How a Decision Tree Works  
+
+1. **Root Node**: The algorithm begins at the root node and splits the data into subsets based on the best possible feature (a process called **splitting**).  
+2. **Recursive Splitting**: Each subset is treated as a new node, and the splitting process continues recursively.  
+3. **Stopping Criteria**: To prevent infinite growth, a **stopping criterion** is applied, such as:  
+   - Maximum tree depth  
+   - Minimum number of samples per node  
+   - Minimum information gain  
+4. **Prediction**: Once the tree is built, new data points are classified by traversing from the root to a leaf node.
+
+** Key Features  
+
+- **Interpretable**: Decision Trees are easy to visualize and understand.  
+- **Prone to Overfitting**: If the tree grows too large, it may overfit, meaning it will perform well on training data but poorly on unseen data.  
+
+*** Techniques to Prevent Overfitting  
+
+- **Depth Limitation**: Restrict the maximum depth of the tree.  
+- **Pruning**: Remove unnecessary branches from the tree.  
+- **Minimum Split Criteria**: Set a minimum threshold for the number of samples required to split a node.  
+
+**** Advantages  
+
+- Simple to understand and interpret.  
+- Handles both numerical and categorical data.  
+- Requires little data preprocessing.  
+
+***** Disadvantages  
+
+- Overfitting if the tree grows too complex.  
+- Sensitive to small changes in data, which can lead to different splits and structures.  
+
+Decision Trees are widely used in various applications and form the basis for more advanced ensemble methods like **Random Forest** and **Gradient Boosted Trees**.
+
+### Neural Networks
+
+**Neural Networks (NNs)**, also known as **Artificial Neural Networks (ANNs)**, represent a rapidly growing field in the realm of physical sciences. Over the past few years, this area has experienced significant advancements, largely driven by progress in computer technology. With increasing interest from scientists across various disciplines, neural networks have become widely recognized and applied in many scientific circles.  
+
+The strong interest in Neural Networks stems from their successful application in numerous fields of science and technology. For example, in **medicine**, they are used for the recognition, analysis, and diagnosis of various diseases, as well as for analyzing electrocardiograms and electroencephalograms. In **economics**, they are employed to predict currency fluctuations, evaluate corporate bonds, assess real estate, and perform other financial calculations. Additionally, ANNs are effectively applied in **robotics**, aiding in motion control, navigation, and robotic vision, as well as in autopilot systems for airplanes and fault detection, among many other areas.  
+
+The first reference to Neural Networks appeared in **1943** in the work of W.S. McCulloch and W. Pitts, titled "A Logical Calculus of the Ideas Immanent in Nervous Activity."  
+
+### Artificial Neural Networks  
+
+**Definition**:  
+A Neural Network is a massively parallel distributed processor composed of simple processing units with an inherent ability to store experiential knowledge and utilize it. Key similarities with the human brain include:  
+- Knowledge acquisition through a learning process.  
+- Knowledge storage via synaptic weights in the connections between neurons.  
+
+### Neuron  
+
+The **neuron** serves as the cornerstone of an Artificial Neural Network, acting as the primary unit for information processing. An Artificial Neuron has one or more inputs, either from its environment or from other neurons in the network, which take numerical values.  
+
+Each neuron exhibits three fundamental characteristics:  
+1. **A set of connections**: Each connection is characterized by a weight, denoted as x_j  or xi_j , representing the input to synapse \( j \). The weight \( w_{nj} \), multiplied by \( x_j \), where \( n \) denotes the neuron and \( j \) the synapse input.  
+2. **An adder**: This component sums all input values after they are multiplied by their respective synaptic weights.  
+3. **An activation function \( g(h) \)**: This function constrains the neuron's output, typically within the closed intervals [0,1] or [-1,1].
