@@ -1,14 +1,4 @@
-# "Reading a CSV file"
-import pandas as pd
-df = pd.read_csv(r'C:\Users\xristos\Desktop\corpus.csv', encoding='utf-16')
-# Display the data frame
-print (df)  
-
-
-
-
-
-Naive Bayes
+### Naive Bayes
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report
@@ -30,7 +20,7 @@ print("Accuracy (Accuracy):", accuracy)
 print(classification_report(y_test, y_pred))
 
 
-KNN (K nearest neighbors)
+### KNN (K nearest neighbors)
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -52,7 +42,7 @@ print(classification_report(y_test, y_pred))
 
 
 
-CART Algorithm
+### CART Algorithm
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -75,7 +65,7 @@ print("Accuracy (Accuracy):", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 
 
-Decision Trees
+### Decision Trees
 
 
 import pandas as pd
@@ -99,7 +89,7 @@ print(classification_report(y_test, y_pred))
 
 
 
-SVM
+### SVM
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -139,7 +129,7 @@ print(report)
 
 
 
-Word2Vec (Logistic Regression)
+### Word2Vec (Logistic Regression)
 import pandas as pd
 from gensim.models import Word2Vec
 from nltk.tokenize import word_tokenize
@@ -147,10 +137,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score
 import numpy as np
-
 # We read the data from the CSV file.
 df = pd.read_csv(r'C:\Users\xristos\Desktop\corpus.csv', encoding='utf-16')
-
 # We define the variables that contain the features (X)
 x = df['Text Here							'].apply(lambda text: text.strip() if isinstance(text, str) else '')
 df['Text Here							'].fillna('', inplace=True)
@@ -194,7 +182,7 @@ print(report)
 
 
 
-SVC
+### SVC
 
 # Importing the necessary libraries.
 
@@ -234,7 +222,7 @@ print(report)
 
 
 
-Neural Network
+### Neural Network
 
 import pandas as pd
 import numpy as np
@@ -282,7 +270,7 @@ print(sparse.issparse(X_train))  # Should return True
 print(sparse.issparse(X_test))   # Should return True
 
 
-Random Forest
+### Random Forest
 
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
