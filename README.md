@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8e371e6b-8ec7-4a67-b73f-b4989f97ac8c)# machine-learning-algorithms
+# machine-learning-algorithms
 My faculty thesis using Python for categorizing Greek books with the use of NLP Algorithms
 
 #Introduction to nlp algorithms:
